@@ -46,6 +46,7 @@
 		854FF49D24ADBC8C00511780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		854FF49F24ADBD0200511780 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		854FF4A024ADBD1200511780 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		854FF4A124ADF60E00511780 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +185,7 @@
 				Base,
 				ar,
 				es,
+				it,
 			);
 			mainGroup = 854FF46824AAA4A100511780;
 			productRefGroup = 854FF47224AAA4A100511780 /* Products */;
@@ -263,6 +265,7 @@
 				854FF49D24ADBC8C00511780 /* en */,
 				854FF49F24ADBD0200511780 /* ar */,
 				854FF4A024ADBD1200511780 /* es */,
+				854FF4A124ADF60E00511780 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
