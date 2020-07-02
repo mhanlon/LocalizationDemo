@@ -53,7 +53,6 @@ struct ContentView_Previews: PreviewProvider {
     // right-to-left
     static var previews: some View {
         ContentView()
-            .environment(\.locale, Locale(identifier: "it"))
             //.environment(\.layoutDirection, .rightToLeft)
     }
 }
