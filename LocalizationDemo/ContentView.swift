@@ -9,16 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    var stories: [Story] = Story.defaultStories()
+    var stories: [Story] = []
     var layoutDirection: LayoutDirection = .leftToRight
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(NSLocalizedString("Bedtime Stories", comment: "Bedtime Stories"))
-                .font(.largeTitle)
-                .bold()
-            Spacer()
-            ForEach(stories, id: \.self) { story in
+                   .font(.largeTitle)
+                   .bold()
+            List(stories) { story in
                 HStack {
                     VStack(alignment: .leading) {
                         Text(story.title)
@@ -39,7 +38,6 @@ struct ContentView: View {
                 .border(Color.black, width: 1)
                 .cornerRadius(3)
             }
-            Spacer()
         }
         .padding(5)
         .frame(maxWidth: .infinity)
@@ -52,7 +50,7 @@ struct ContentView_Previews: PreviewProvider {
     // this view translates to a locale in which text is read
     // right-to-left
     static var previews: some View {
-        ContentView()
+        ContentView(stories: testData)
             //.environment(\.layoutDirection, .rightToLeft)
     }
 }
